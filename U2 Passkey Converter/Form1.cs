@@ -68,7 +68,7 @@ namespace U2_Passkey_Converter
             while (start <= dat.root.items.Count())
             {
                 string req = "[";
-                for (int i = start; i < start + 49; i++)
+                for (int i = start; i <= start + 49; i++)
                 {
                     if (i >= dat.root.items.Count())
                         break;
@@ -118,6 +118,7 @@ namespace U2_Passkey_Converter
             }
 
             dat.save("./resume.dat.new");
+            MessageBox.Show("Finished");
         }
 
         private void buttonDat_Click(object sender, EventArgs e)
